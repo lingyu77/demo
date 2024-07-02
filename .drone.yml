@@ -1,9 +1,7 @@
 kind: pipeline
-name: default-test
-
+name: default
 steps:
-- name: backend
-  image: alpine
-  commands:
-  - echo hello
-  - echo world
+  - name: build
+    image: golang
+    commands:
+      - echo test
