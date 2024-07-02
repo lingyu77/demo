@@ -2,6 +2,8 @@ kind: pipeline
 name: default-test
 
 steps:
-  - name: backend
-    commands:
-      - echo test
+- name: backend
+  image: alpine
+  commands:
+  - echo hello
+  - echo world
